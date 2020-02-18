@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>654,696</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>889,782</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>IC_6_PRACTICE_1_0_Dx_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -34,7 +34,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -51,6 +51,8 @@
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="IC_6_PRACTICE_1_0_Dx" sap:VirtualizedContainerService.HintSize="869,682" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -64,7 +66,7 @@
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,127.5</av:PointCollection>
-        <x:Double x:Key="Width">834.64166666666665</x:Double>
+        <x:Double x:Key="Width">834.641666666667</x:Double>
         <x:Double x:Key="Height">645.5</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
@@ -147,7 +149,7 @@
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">360,364.5</av:Point>
                   <av:Size x:Key="ShapeSize">200,51</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">560,390 590,390 590,296.5 700,296.5 700,326.5</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">560,390 681.5,390 681.5,436.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:MessageBox Caption="{x:Null}" Buttons="YesNo" ChosenButton="[Bt_Erro]" DisplayName="ERRROUUUUUUU!!!!" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;O codigo ta erradinho meu consagrado, quer colocar dnv?&quot;]">
@@ -158,21 +160,21 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:MessageBox>
               <FlowStep.Next>
-                <FlowDecision x:Name="__ReferenceID4" Condition="[Bt_Erro.Equals(&quot;Yes&quot;)]" DisplayName="Se Bt_Erro = &quot;Sim&quot;" sap:VirtualizedContainerService.HintSize="102,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2" True="{x:Reference __ReferenceID0}">
+                <FlowDecision x:Name="__ReferenceID4" Condition="[Bt_Erro.Equals(&quot;Yes&quot;) &lt;&gt; True]" DisplayName="Se Bt_Erro != &quot;Sim&quot;" sap:VirtualizedContainerService.HintSize="105,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <av:Point x:Key="ShapeLocation">649,326.5</av:Point>
-                      <av:Size x:Key="ShapeSize">102,87</av:Size>
-                      <av:PointCollection x:Key="FalseConnector">751,370 781,370 781,449 542.641666666667,449 542.641666666667,509 572.641666666667,509</av:PointCollection>
-                      <av:PointCollection x:Key="TrueConnector">649,370 619,370 619,153 400,153</av:PointCollection>
+                      <av:Point x:Key="ShapeLocation">629,436.5</av:Point>
+                      <av:Size x:Key="ShapeSize">105,87</av:Size>
+                      <av:PointCollection x:Key="TrueConnector">629,480 599,480 599,540 571,540</av:PointCollection>
+                      <av:PointCollection x:Key="FalseConnector">734,480 764,480 764,153 400,153</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <FlowDecision.False>
+                  <FlowDecision.True>
                     <FlowStep x:Name="__ReferenceID6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">572.641666666667,479</av:Point>
+                          <av:Point x:Key="ShapeLocation">309,510</av:Point>
                           <av:Size x:Key="ShapeSize">262,60</av:Size>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -190,6 +192,9 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </Assign>
                     </FlowStep>
+                  </FlowDecision.True>
+                  <FlowDecision.False>
+                    <x:Reference>__ReferenceID0</x:Reference>
                   </FlowDecision.False>
                 </FlowDecision>
               </FlowStep.Next>
