@@ -52,7 +52,7 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="IC_2_PRACTICE_1_0_Dx" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="IC_2_PRACTICE_1_0_Dx" sap:VirtualizedContainerService.HintSize="638,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="listaDeNomes" />
       <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="listaDeEmails" />
@@ -67,6 +67,7 @@
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,127.5</av:PointCollection>
+        <x:Double x:Key="Width">604</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
@@ -187,7 +188,7 @@
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">370,374.5</av:Point>
                       <av:Size x:Key="ShapeSize">200,51</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">470,425.5 460,425.5 460,454.5</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">470,425.5 470,444.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InputDialog Options="{x:Null}" DisplayName="Solicita nome novamente" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Parece que seus dados estão errados. Digite seu nome novamente" Title="Ops">
@@ -204,9 +205,9 @@
                     <FlowStep x:Name="__ReferenceID4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">360,454.5</av:Point>
+                          <av:Point x:Key="ShapeLocation">370,444.5</av:Point>
                           <av:Size x:Key="ShapeSize">200,51</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">560,480 590,480 590,254 400,254</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">570,470 600,470 600,254 400,254</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:InputDialog Options="{x:Null}" Title="{x:Null}" DisplayName="Solicita email novamente" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Agora o email">
