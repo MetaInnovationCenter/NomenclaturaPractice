@@ -1625,15 +1625,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MAKSINE.BALDIN\\.nuget\\packages\\": {}
+    "C:\\Users\\joao.larrosa\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "IC_PRACTICE_1",
       "projectName": "IC_PRACTICE_1",
-      "projectPath": "C:\\Users\\MAKSINE.BALDIN\\Documents\\UiPath\\NomenclaturaPractice\\.local",
-      "packagesPath": "C:\\Users\\MAKSINE.BALDIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MAKSINE.BALDIN\\Documents\\UiPath\\NomenclaturaPractice\\.local"
+      "projectPath": "C:\\Users\\joao.larrosa\\Documents\\UiPath\\NomenclaturaPractice\\.local",
+      "packagesPath": "C:\\Users\\joao.larrosa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joao.larrosa\\Documents\\UiPath\\NomenclaturaPractice\\.local"
     },
     "frameworks": {
       "net461": {
